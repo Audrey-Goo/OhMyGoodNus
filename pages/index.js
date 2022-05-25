@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import Feed from '../components/Feed'
 import Modal from '../components/Modal'
 
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <div className="bg-beige h-screen overflow-y-scroll scrollbar-hide">
