@@ -7,7 +7,7 @@ import Modal from '../components/Modal'
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
+    <div className="bg-beige h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>Oh my Goodnus</title>
         <link rel="icon" href="/favicon.ico" />

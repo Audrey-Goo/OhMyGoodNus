@@ -9,6 +9,10 @@ import {
     HeartIcon,
     PaperAirplaneIcon,
     MenuIcon,
+    UploadIcon,
+    TemplateIcon,
+    UserCircleIcon,
+    ChatAltIcon
 } from "@heroicons/react/outline"
 import { HomeIcon } from "@heroicons/react/solid"
 import Home from '../pages'
@@ -23,11 +27,11 @@ function Header() {
   const router = useRouter();
 
   return (
-    <div className="shadow-sm border-b bg-white sticky top-0 z-50">
+    <div className="shadow-sm border-b bg-beige sticky top-0 z-50">
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         <div onClick={() => router.push("/")} className="relative hidden lg:inline-grid w-24 cursor-pointer">
             <Image 
-                src = 'https://links.papareact.com/ocw'
+                src = 'https://links.papareact.com/ocw '
                 layout='fill'
                 objectFit="contain"
                 alt = ""
@@ -59,14 +63,14 @@ function Header() {
         {session ? (
           <>
           <div className="relative navBtn">
-            <PaperAirplaneIcon className="navBtn rotate-45" />
+            <ChatAltIcon className="navBtn" />
             <div className="absolute -top-2 -right-1 text-xs w-5 h-5
              bg-red-500 rounded-full flex items-center justify-center animate-bounce text-white">3</div>
           </div>
 
-          <PlusCircleIcon onClick={() => setOpen(true)} className="navBtn" />
-          <UserGroupIcon className="navBtn" />
-          <HeartIcon className="navBtn" />
+          <UploadIcon onClick={() => setOpen(true)} className="navBtn" />
+          <UserCircleIcon className="navBtn" />
+          <TemplateIcon className="navBtn" />
 
           <img onClick={signOut} src = {session.user.image} 
           alt = "profile pic" 
