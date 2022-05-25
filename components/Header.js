@@ -32,7 +32,7 @@ function Header() {
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         <div onClick={() => router.push("/")} className="relative hidden lg:inline-grid w-24 cursor-pointer">
             <Image 
-                src = {PICTURE}
+                src = "https://links.papareact.com/ocw"
                 layout='fill'
                 objectFit="contain"
                 alt = ""
@@ -64,14 +64,14 @@ function Header() {
         {session ? (
           <>
           <div className="relative navBtn">
-            <ChatAltIcon className="navBtn" />
+            <ChatAltIcon onClick={() => router.push("/chat")} className="navBtn" />
             <div className="absolute -top-2 -right-1 text-xs w-5 h-5
              bg-red-500 rounded-full flex items-center justify-center animate-bounce text-white">3</div>
           </div>
 
           <UploadIcon onClick={() => setOpen(true)} className="navBtn" />
-          <UserCircleIcon className="navBtn" />
-          <TemplateIcon className="navBtn" />
+          <UserCircleIcon onClick={() => router.push("/profile")} className="navBtn" />
+          <TemplateIcon onClick={() => router.push("/maincatalogue")} className="navBtn" />
 
           <img onClick={signOut} src = {session.user.image} 
           alt = "profile pic" 
