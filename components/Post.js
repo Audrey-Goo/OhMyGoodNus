@@ -51,7 +51,7 @@ function Post({ id,username, userImg, img, caption }) {
   }
 
   return (
-    <div className='bg-white my-7 border rounded-sm'>
+    <div className='bg-pinkbrown my-7 border rounded-sm'>
 
       {/*Header*/}
       <div className='flex items-center p-5'>
@@ -115,7 +115,7 @@ function Post({ id,username, userImg, img, caption }) {
       {session && (
         <form className='flex items-center p-4'>
         <EmojiHappyIcon className="h-7" />
-          <input type='text' value={comment} onChange={e => setComment(e.target.value)} placeholder='Add a comment...' className='border-none flex-1 focus:ring-0 outline-none'/>
+          <input type='text' value={comment} onChange={e => setComment(e.target.value)} placeholder='Add a comment...' className='border-none bg-beige flex-1 focus:ring-0 outline-none'/>
           <button type = 'submit' disabled={!comment.trim()} onClick={sendComment} className='font-semibold text-blue-400'>Post</button>
         </form>
       )}

@@ -20,6 +20,7 @@ import { signIn, signOut, useSession } from "next-auth/react"
 import { useRouter } from "next/router"
 import { useRecoilState } from 'recoil'
 import { modalState } from "../atoms/modalAtom" 
+import PICTURE from "../public/fashion-logo-design.jpg"
 
 function Header() {
   const { data: session } = useSession();
@@ -31,7 +32,7 @@ function Header() {
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         <div onClick={() => router.push("/")} className="relative hidden lg:inline-grid w-24 cursor-pointer">
             <Image 
-                src = 'https://links.papareact.com/ocw '
+                src = {PICTURE}
                 layout='fill'
                 objectFit="contain"
                 alt = ""
@@ -51,7 +52,7 @@ function Header() {
             <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
               <SearchIcon className="h-5 w-5 text-gray-500" />
             </div>
-            <input className="bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-md" 
+            <input className="bg-offwhite block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-md" 
             type='text' 
             placeholder='Search' />
           </div>
