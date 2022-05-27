@@ -1,5 +1,14 @@
 import React from 'react'
+import Head from "next/head"
+import Sidebar from "../components/Sidebar"
+import Chat from "../components/Chat"
+
 
 export default function chat() {
-    return (<h1>Test Chat Page</h1>)
+    return (
+        <div>
+        <Sidebar />
+        <Chat />
+        </div>
+    )
 }
