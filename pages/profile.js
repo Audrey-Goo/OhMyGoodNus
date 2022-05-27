@@ -1,5 +1,17 @@
 import React from 'react'
 
 export default function profile() {
-    return (<h1>Test Profile Page</h1>)
+    return (
+
+        <div className = "h-screen pt-20 bg-gray-100">
+            <Header />
+            <Profile />
+        </div>
+
+
+
+
+
+    )
 }
+
