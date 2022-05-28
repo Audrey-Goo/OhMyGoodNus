@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import {
     CogIcon
 } from '@heroicons/react/outline';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGripVertical } from '@fortawesome/free-solid-svg-icons'
-import { faAddressCard } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/fontawesome-svg-core'
+//import { faGripVertical } from '@fortawesome/free-solid-svg-icons'
+//import { faAddressCard } from '@fortawesome/free-regular-svg-icons'
 import { PlayIcon, BookmarkIcon } from '@heroicons/react/outline';
 
 const Profile = () => {
@@ -55,30 +57,3 @@ const Profile = () => {
 }
 
 export default Profile
-
-module.exports = {
-    mode: 'jit',
-    purge: ['./pages/**//*.{js, ts, jsx, tsx}', './components/**/*.{js, ts, jsx, tsx}'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {
-            animation: {
-                fade: 'fade 5s ease-in-out'
-            },
-            keyframes: {
-                fade: {
-                    '0%': { opacity: 0, left: '50%', transform: 'translateX(-50%) scale(0)' },
-                    '5%': { opacity: 1, left: '50%', transform: 'translateX(-50%)' },
-                    '95%': { opacity: 1, left: '50%', transform: 'translateX(-50%)' },
-                    '100%': { opacity: 0, left: '50%', transform: 'translateX(-50%)scale(0)' },
-                }
-            }
-        },
-    },
-    variants: {
-        extend: {},
-    },
-    plugins: [
-        require('daisyui'),
-    ],
-}
