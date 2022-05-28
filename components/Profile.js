@@ -47,10 +47,10 @@ const Profile = () => {
             </div>
             <hr className='border-gray-500 mt-6' />
             <div className='flex justify-center gap-10'>
-                <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><FontAwesomeIcon icon ={faGripVertical} size='lg' />POSTS</button>
+                <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><FontAwesomeIcon icon ={faGripVertical}size='lg' />POSTS</button>
                 <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><PlayIcon className='h-6' />VIDEOS</button>
                 <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><BookmarkIcon className='h-6' />SAVED</button>
-                <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><FontAwesomeIcon icon ={faAddressCard} size='lg' />TAGGED</button>
+                <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><FontAwesomeIcon  icon ={faAddressCard} size='lg' />TAGGED</button>
             </div>
         </div>
     )
