@@ -12,7 +12,8 @@ import {
     UploadIcon,
     TemplateIcon,
     UserCircleIcon,
-    ChatAltIcon
+    ChatAltIcon,
+    MoonIcon
 } from "@heroicons/react/outline"
 import { HomeIcon } from "@heroicons/react/solid"
 import Home from '../pages'
@@ -31,12 +32,13 @@ function Header() {
     <div className="shadow-sm border-b bg-beige sticky top-0 z-50">
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         <div onClick={() => router.push("/")} className="relative hidden lg:inline-grid w-24 cursor-pointer">
-            <Image 
+            <MoonIcon className='navBtn'/>
+            {/* <Image 
                 src = "https://links.papareact.com/ocw"
                 layout='fill'
                 objectFit="contain"
                 alt = ""
-            />
+            /> */}
         </div>
 
         <div onClick={() => router.push("/")} className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">

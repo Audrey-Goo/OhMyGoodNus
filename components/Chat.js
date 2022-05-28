@@ -1,6 +1,7 @@
 import { Avatar } from "@mui/material"
 import styled from "styled-components"
 import React from 'react'
+import Header from '../components/Header'
 
 function Chat({ id, users }) {
   return (
