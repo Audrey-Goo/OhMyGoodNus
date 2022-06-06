@@ -8,6 +8,7 @@ import "locomotive-scroll/dist/locomotive-scroll.css"
 import Home from '../sections/Home'
 import About from '../sections/About'
 import Shop from '../sections/Shop'
+import NewArrival from '../sections/NewArrival'
 import ScrollTriggerProxy from '../components/ScrollTriggerProxy'
 import { AnimatePresence } from 'framer-motion'
 
@@ -38,6 +39,7 @@ export default function maincatalogue() {
             <Home /> 
             <About />
             <Shop />
+            <NewArrival />
           </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>

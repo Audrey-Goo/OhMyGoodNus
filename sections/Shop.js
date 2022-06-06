@@ -3,7 +3,7 @@ import React, {useRef, useLayoutEffect} from 'react'
 import styled from 'styled-components'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import img1 from '../assets/Images/web1.jpg'
+import img1 from '../public/Images/web1.jpg'
 import {motion} from 'framer-motion'
 
 const Section = styled.section`
