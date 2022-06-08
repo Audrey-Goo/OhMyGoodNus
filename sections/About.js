@@ -44,20 +44,20 @@ img{
     width:40%;
     position: absolute;
     right:95%;
-    bottom:10%;
+    bottom:30%;
 }
 
 .small-img-2{
     width:40%;
     position: absolute;
     left:80%;
-    bottom:30%;
+    bottom:40%;
 }
 `
 
 const About = () => {
   return (
-    <Section id='fixed-target'>
+    <Section id='fixed-target' className='about'>
       <Title data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
           About Us 
       </Title>

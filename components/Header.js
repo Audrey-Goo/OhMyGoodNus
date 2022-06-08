@@ -4,10 +4,7 @@ import Image from "next/image"
 
 import {
     SearchIcon,
-    PlusCircleIcon,
-    UserGroupIcon,
-    HeartIcon,
-    PaperAirplaneIcon,
+    NewspaperIcon,
     MenuIcon,
     UploadIcon,
     TemplateIcon,
@@ -74,6 +71,7 @@ function Header() {
           <UploadIcon onClick={() => setOpen(true)} className="navBtn" />
           <UserCircleIcon onClick={() => router.push("/profile")} className="navBtn" />
           <TemplateIcon onClick={() => router.push("/maincatalogue")} className="navBtn" />
+          <NewspaperIcon onClick={() => router.push("/articles")} className="navBtn" />
 
           <img onClick={signOut} src = {session.user.image} 
           alt = "profile pic" 

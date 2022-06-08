@@ -5,7 +5,8 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-//import { getAuth } from 'firebase/auth'; // Added for chat
+import { getAuth } from 'firebase/auth'; 
+import { GoogleAuthProvider } from "firebase/auth";
 
 
 const firebaseConfig = {
@@ -20,9 +21,9 @@ const firebaseConfig = {
 
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-const db = getFirestore();
-const storage = getStorage();
-//const auth = getAuth(); // Added for chat
-//const provider = new firebase.auth.GoogleAuthProvider(); // Added for chat
+const db = getFirestore(app);
+const storage = getStorage(app);
+const auth = getAuth(app); 
+const provider = new GoogleAuthProvider();
 
-export { app, db, storage };
+export { app, db, storage, auth, provider };

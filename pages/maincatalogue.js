@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { dark } from "../styles/Themes"
 import { ThemeProvider } from 'styled-components'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
@@ -13,8 +13,9 @@ import ScrollTriggerProxy from '../components/ScrollTriggerProxy'
 import { AnimatePresence } from 'framer-motion'
 
 
-export default function maincatalogue() {
+export default function Maincatalogue() {
   const containerRef = useRef(null);
+
 
   return (
     <>

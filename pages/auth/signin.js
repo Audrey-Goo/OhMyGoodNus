@@ -9,7 +9,7 @@ function signIn({ providers }) {
       <Header />
 
       <div className='flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center'>
-        <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
+        <img className="w-80" src="/Images/iu2.jpg" alt="" />
         <p className="font-xs italic">
             This is not a real App, built for educational purposes
         </p>

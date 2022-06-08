@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, {useRef, useLayoutEffect} from 'react'
 import styled from 'styled-components'
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import {gsap} from 'gsap/dist/gsap'
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import img1 from '../public/Images/web1.jpg'
 import {motion} from 'framer-motion'
 
@@ -103,7 +103,7 @@ const Product = ({img, title = ''}) => {
         transition={{duration:0.5}}
         viewport={{once:false, amount:'all'}}
         >
-            <img src={img} alt={title} />
+            <img src="/Images/web1.jpg" alt={title} />
             <h1>{title}</h1>
         </Item>
     )
@@ -132,7 +132,7 @@ useLayoutEffect(() =>{
                 scroller: '.App',
                 scrub:true,
                 pin:true,
-                markers:true,
+                // markers:true,
             },
             height: `${scrollingElement.scrollWidth}px`,
             ease:'none,'
@@ -146,7 +146,7 @@ useLayoutEffect(() =>{
                 scroller: '.App',
                 scrub:true,
                 
-                markers:true,
+                // markers:true,
             },
             x: -pinWrapWidth,
             ease:'none,'
@@ -155,14 +155,15 @@ ScrollTrigger.refresh();
     }, 1000);
 
     return () => { 
-
-    };
+        t1.kill();
+        // ScrollTrigger.kill();
+      };
 },[])
 
 
 
   return (
-    <Section ref={ref}>
+    <Section ref={ref} id='shop'>
         <Title data-scroll data-scroll-speed="-1">New Collection</Title>
         <Left>
             <p>

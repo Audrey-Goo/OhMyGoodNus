@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['links.papareact.com'],
-  }
+  },
+  build:{
+    transpile: ['gsap']
+  },
 }
 
 module.exports = nextConfig 
