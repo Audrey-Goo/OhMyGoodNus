@@ -10,12 +10,15 @@ import { addDoc, collection, onSnapshot, orderBy, serverTimestamp, query, setDoc
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
-  // const [user] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   //const auth = getAuth();
+
+
+
   useEffect(() => {
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      addDoc(collection(db,"users"), {
+      setDoc(doc(db,"users"), {
         email: user.email,
         lastSeen: serverTimestamp(),
         photoURL: user.photoURL,
@@ -26,7 +29,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   // useEffect(() => {
   //   if (user) {
-  //     addDoc(collection(db,"users"), {
+  //     setDoc(doc(db,"users"), {
   //       email: user.username,
   //       lastSeen: serverTimestamp(),
   //       photoURL: user.photoURL,

@@ -1,9 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import React, {useRef, useLayoutEffect} from 'react'
 import styled from 'styled-components'
 import {gsap} from 'gsap/dist/gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
-import img1 from '../public/Images/web1.jpg'
+
+import Image from 'next/image'
+import img1 from '../public/Images/mencasual.jpg'
+import img2 from '../public/Images/menformal.jpg'
+import img3 from '../public/Images/menlounge.jpg'
+import img4 from '../public/Images/menathleisure.jpg'
+import img5 from '../public/Images/menpreppy.jpg'
+import img6 from '../public/Images/menhighend.jpg'
+
 
 const Section = styled.section`
 min-height: 100vh;
@@ -47,7 +56,7 @@ z-index:11;
 
 const Text = styled.div`
 width: 20%;
-font-size:${props=>props.theme.fontlg};
+font-size:${props=>props.theme.fontxl};
 font-weight: 300;
 position:absolute;
 padding:2rem;
@@ -90,7 +99,7 @@ const Product = ({img, title = ''}) => {
     return(
         <Item
         >
-            <img src="/Images/web1.jpg" alt={title} />
+            <img src={img} alt={title} />
             <h2>{title}</h2>
         </Item>
     )
@@ -150,26 +159,25 @@ ScrollTrigger.refresh();
   return (
     <Section ref={ref} id='new-arrival'>
     <Overlay /> 
-    <Title data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">New arrival</Title>
+    <Title data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">Men's</Title>
 
     <Container ref={ScrollingRef}>
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
+            <Product img={img1} title="Casual" />
+            <Product img={img2} title="Formal" />
+            <Product img={img3} title="Lounge" />
+            <Product img={img4} title="Athleisure" />
+            <Product img={img5} title="Preppy" />
+            <Product img={img6} title="High end" />
         </Container>
     
     <Text data-scroll data-scroll-speed="-4">
-        We are a fashion studio based in California. We create unique designs that will blow your mind. We also share fashion articles.
-        Fashion is an Art that can be grasped by everyone.
+        Find your personal style with the latest trending looks for men.
         <br />
         <br />
-        We are very dedicated to our project. We offer unique and creative products to a wide range of people. We have a 
-        variety of styles, but for most people, all of the options are in the box.
-        We specialize in making things that make you happy.
+        From workwear to weekend, our album will help you discover your ideal wardrobe.
         <br /> 
         <br />
-        We strive to build on our vision. As a fashion label, we do our best to create amazing experiences for all people.
+        
     </Text>
     
     </Section>

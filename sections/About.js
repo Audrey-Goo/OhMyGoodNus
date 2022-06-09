@@ -24,7 +24,7 @@ z-index: 5;
 `
 
 const Left = styled.div`
-font-size:${props=>props.theme.fontlg};
+font-size:${props=>props.theme.fontxl};
 font-weight: 300;
 position:relative;
 z-index: 5;
@@ -62,21 +62,22 @@ const About = () => {
           About Us 
       </Title>
     <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-        We are a fashion studio based in California. We create unique designs that will blow your mind. We also share fashion articles.
-        Fashion is an Art that can be grasped by everyone.
+        Personal style is something that each of us has; we just have to identify it, understand it, and then live it. It projects
+        your mood, personality, and you as a whole, reflecting your interests, lifestyle, inspirations, and your past.
         <br />
         <br />
-        We are very dedicated to our project. We offer unique and creative products to a wide range of people. We have a 
-        variety of styles, but for most people, all of the options are in the box.
-        We specialize in making things that make you happy.
+        Looking for a new way to style your favourite pieces?  
         <br /> 
         <br />
-        We strive to build on our vision. As a fashion label, we do our best to create amazing experiences for all people.
+        Interested in exploring new styles but not sure where to start? 
+        <br />
+        <br />
+        Read on for the best outfit inspiration and ideas for every occasion.
     </Left>
     <Right>
-        <img src='/Images/web1.jpg' alt="About us" />
-        <img data-scroll data-scroll-speed="5" src='/Images/web2.jpg' className="small-img-1" alt="About us" />
-        <img data-scroll data-scroll-speed="-2" src='/Images/web3.jpg' alt="About us" className='small-img-2'/>
+        <img src='/Images/iu1.jpg' alt="About us" />
+        <img data-scroll data-scroll-speed="5" src='/Images/iu2.jpg' className="small-img-1" alt="About us" />
+        <img data-scroll data-scroll-speed="-2" src='/Images/iu4.png' alt="About us" className='small-img-2'/>
     </Right>
     </Section>
   )

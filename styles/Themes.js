@@ -19,3 +19,10 @@ export const dark = {
 
     navHeight: "5rem"
 }
+
+// 'darkbrown': '#8d7b72',
+// 'mildbrown': '#a4978b',
+// 'brown': '#c6b1a1',
+// 'pinkbrown': '#dbc8b9',
+// 'beige': '#e5ded2',
+// 'offwhite': '#f7efe9',

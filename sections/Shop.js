@@ -1,10 +1,19 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import React, {useRef, useLayoutEffect} from 'react'
 import styled from 'styled-components'
 import {gsap} from 'gsap/dist/gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
-import img1 from '../public/Images/web1.jpg'
 import {motion} from 'framer-motion'
+
+import Image from 'next/image'
+import img1 from '../public/Images/iucasual.jpg'
+import img2 from '../public/Images/iuformal.jpg'
+import img3 from '../public/Images/iuathleisure.jpg'
+import img4 from '../public/Images/iuchic.jpg'
+import img5 from '../public/Images/iuvintage.jpg'
+import img6 from '../public/Images/iugirly.jpg'
+
 
 const Section = styled.section`
 min-height: 100vh;
@@ -48,7 +57,7 @@ justify-content: center;
 align-items: center;
 
 p{
-    font-size: ${props=>props.theme.fontlg};
+    font-size: ${props=>props.theme.fontxl};
     font-weight: 300;
     width: 80%;
     margin: 0 auto;
@@ -103,7 +112,7 @@ const Product = ({img, title = ''}) => {
         transition={{duration:0.5}}
         viewport={{once:false, amount:'all'}}
         >
-            <img src="/Images/web1.jpg" alt={title} />
+            <img src={img} alt={title} />
             <h1>{title}</h1>
         </Item>
     )
@@ -164,29 +173,24 @@ ScrollTrigger.refresh();
 
   return (
     <Section ref={ref} id='shop'>
-        <Title data-scroll data-scroll-speed="-1">New Collection</Title>
+        <Title data-scroll data-scroll-speed="-1">Women's</Title>
         <Left>
             <p>
-                The brand new collection is currently being developed in the USA. We create our products using the best material, including
-                the use of some pure fabrics. All products are made using the best materials, from the finest cottons to the finest fabrics.
+                From smart suits to sophisticated separates, we handpicked our favourite outfits for women
+                to wear all season long.
                 <br />
                 <br />
-                We have lots of different clothing options like shoes, jackets and dresses.
-                Not only clothes but we also provide unique Jewellery as well.
+                
 
             </p>
         </Left>
         <Right ref={horizontalRef}>
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
-            <Product img={img1} title="xyz" />
+            <Product img={img1} title="Casual" />
+            <Product img={img2} title="Formal" />
+            <Product img={img3} title="Athleisure" />
+            <Product img={img4} title="Chic" />
+            <Product img={img5} title="Vintage" />
+            <Product img={img6} title="Girly" />
         </Right>
     </Section>
   )

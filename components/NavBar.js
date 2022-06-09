@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react'
 import styled from "styled-components"
 import {motion} from 'framer-motion'
@@ -102,8 +103,8 @@ const NavBar = () => {
       <MenuBtn onClick={()=>setClick(!click)}>Menu</MenuBtn>
       <MenuItem onClick={()=> handleScroll('#home')} whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9, y:0}}>Home</MenuItem>
       <MenuItem onClick={()=> handleScroll('.about')} hileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9, y:0}}>About</MenuItem>
-      <MenuItem onClick={()=> handleScroll('#shop')} whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9, y:0}}>Shop</MenuItem>
-      <MenuItem onClick={()=> handleScroll('#new-arrival')} whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9, y:0}}>New arrivals</MenuItem>
+      <MenuItem onClick={()=> handleScroll('#shop')} whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9, y:0}}>Women's</MenuItem>
+      <MenuItem onClick={()=> handleScroll('#new-arrival')} whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9, y:0}}>Men's</MenuItem>
 
       </MenuItems>
     </NavContainer>

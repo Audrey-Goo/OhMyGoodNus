@@ -31,3 +31,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.articles {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:10px;
+}
+
+.news-app {
+  max-width: 500px;
+  padding: 30px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+}
