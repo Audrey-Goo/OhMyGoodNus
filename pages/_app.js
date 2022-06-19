@@ -8,42 +8,31 @@ import { useEffect } from 'react'
 import { useSession } from "next-auth/react"
 import { addDoc, collection, onSnapshot, orderBy, serverTimestamp, query, setDoc, deleteDoc, doc } from 'firebase/firestore';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { ChakraProvider } from '@chakra-ui/react'
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const [user] = useAuthState(auth);
-  //const auth = getAuth();
-
-
-
-  useEffect(() => {
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setDoc(doc(db,"users"), {
-        email: user.email,
-        lastSeen: serverTimestamp(),
-        photoURL: user.photoURL,
-      },
-      {merge:true})
-    }
-  }) },[])
+  //const { data: session } = useSession();
 
   // useEffect(() => {
   //   if (user) {
-  //     setDoc(doc(db,"users"), {
-  //       email: user.username,
+  //     db.collection('users').doc(user.uid).set({
+  //       email: user.email,
   //       lastSeen: serverTimestamp(),
-  //       photoURL: user.photoURL,
-  //     },
+  //       photoURL: user.image,
+  //     }, 
   //     {merge:true})
   //   }
-  // }, [user])
+  // },[user])
 
   return (
+    
     <SessionProvider session={session}>
       <RecoilRoot>
         <Component {...pageProps} />
       </RecoilRoot>
     </SessionProvider>
+  
   );
 }
 

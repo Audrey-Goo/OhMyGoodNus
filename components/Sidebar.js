@@ -7,63 +7,43 @@ import SearchIcon from "@mui/icons-material/Search"
 import * as EmailValidator from 'email-validator'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth, db } from '../firebase'
-import { getFirestore } from "firebase/firestore";
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { useEffect } from 'react'
 import { useSession } from "next-auth/react"
-import { addDoc, collection, onSnapshot, orderBy, serverTimestamp, query, setDoc, deleteDoc, doc, getDocs } from 'firebase/firestore';
+import { addDoc, collection, onSnapshot, orderBy, serverTimestamp, query, setDoc, deleteDoc, doc, getDocs, where } from 'firebase/firestore';
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import Chat from "../components/Chat"
 
 
 
 function Sidebar() {
-  //const user = auth.currentUser;
   const [user] = useAuthState(auth);
-  //const { data: session } = useSession();
+  const { data: session } = useSession();
 
-  
-      const userChatRef = getDocs(collection(db, "chats"))?.where('users','array-contains', user.email)
-      const [chatsSnapshot] = useCollection(userChatRef)
+      const q = query(collection(db,"chats"), where('users','array-contains', session.user.email))
+      //const userChatRef = getDocs(q)
+      const [chatsSnapshot] = useCollection(q)
     
       const createChat = () => {
         const input = prompt("Please enter an email address for the user you wish to chat with");
     
         if (!input) return null;
     
-        if (EmailValidator.validate(input) && !chatAlreadyExists(input) && input !== user.email) {
+        if (EmailValidator.validate(input) && !chatAlreadyExists(input) && input !== session.user.email) {
           addDoc(collection(db, 'chats'), {
-            users: [session.user.uid, input],
+            users: [session.user.email, input],
           })
         }
-    }
+     }
     
       const chatAlreadyExists = (recipientEmail) =>
-        !!chatsSnapshot?.docs.find(chat=>chat.data().users.find(user=>user ===recipientEmail)?.length>0)
+        !!chatsSnapshot?.docs.find((chat)=>chat.data().users.find(user=>user ===recipientEmail)?.length>0)
     
-
-//   const userChatRef = getDocs(collection(db, "chats"))?.where('users','array-contains', user.email)
-//   const [chatsSnapshot] = useCollection(userChatRef)
-
-//   const createChat = () => {
-//     const input = prompt("Please enter an email address for the user you wish to chat with");
-
-//     if (!input) return null;
-
-//     if (EmailValidator.validate(input) && !chatAlreadyExists(input) && input !== user.email) {
-//       addDoc(collection(db, 'chats'), {
-//         users: [session.user.uid, input],
-//       })
-//     }
-// }
-
-//   const chatAlreadyExists = (recipientEmail) =>
-//     !!chatsSnapshot?.docs.find(chat=>chat.data().users.find(user=>user ===recipientEmail)?.length>0)
-  
 
   return (
     <Container>
       <Header>
-        <UserAvatar />
+        <UserAvatar src={session.user.image}/>
 
         <IconsContainer>
           <IconButton>
@@ -81,6 +61,10 @@ function Sidebar() {
       </Search>
 
       <SidebarButton onClick={createChat}>Start a new chat</SidebarButton>
+
+      {chatsSnapshot?.docs.map((chat) => (
+        <Chat key={chat.id} id ={chat.id} users={chat.data().users} />
+      ))}
     </Container>
   )
 }

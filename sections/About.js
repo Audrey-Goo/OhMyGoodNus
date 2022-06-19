@@ -59,7 +59,7 @@ const About = () => {
   return (
     <Section id='fixed-target' className='about'>
       <Title data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
-          About Us 
+          Catalogue
       </Title>
     <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
         Personal style is something that each of us has; we just have to identify it, understand it, and then live it. It projects
@@ -78,6 +78,7 @@ const About = () => {
         <img src='/Images/iu1.jpg' alt="About us" />
         <img data-scroll data-scroll-speed="5" src='/Images/iu2.jpg' className="small-img-1" alt="About us" />
         <img data-scroll data-scroll-speed="-2" src='/Images/iu4.png' alt="About us" className='small-img-2'/>
+      
     </Right>
     </Section>
   )

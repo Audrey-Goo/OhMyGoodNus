@@ -11,7 +11,7 @@ function signIn({ providers }) {
       <div className='flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center'>
         <img className="w-80" src="/Images/iu2.jpg" alt="" />
         <p className="font-xs italic">
-            This is not a real App, built for educational purposes
+            This is not a real App, built for Orbital
         </p>
 
         <div className="mt-40">
