@@ -45,3 +45,21 @@ a {
   border: 1px solid lightblue;
   border-radius: 5px;
 }
+
+.news-header { 
+  padding: 30px; 
+  text-align: center; 
+  background-color: #e5ded2; 
+  font-size: 80px; 
+  color: #4d4440; 
+  font-family: 'Times New Roman', serif; 
+} 
+ 
+.news-subheader { 
+  padding: 10px; 
+  text-align: center; 
+  background-color: #e5ded2; 
+  font-size: 20px; 
+  color: #766963; 
+  font-family: 'Times New Roman', serif; 
+}

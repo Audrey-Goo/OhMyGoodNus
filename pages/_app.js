@@ -11,7 +11,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { ChakraProvider } from '@chakra-ui/react'
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
-  const [user] = useAuthState(auth);
+  //const [user] = useAuthState(auth);
   //const { data: session } = useSession();
 
   // useEffect(() => {

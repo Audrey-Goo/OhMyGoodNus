@@ -16,7 +16,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 export default function ChatTwo() {
   const { data: session } = useSession();
-  const userRef = doc(db, "users", session.user.uid) // Don't know how to auto-generate ID 
+  const userRef = doc(db, "users", 'pls#' + session.user.uid) // Don't know how to auto-generate ID 
   //const userRef = doc(collection(db,"users")) Will keep adding new document instead of overwriting
 
   useEffect(() => {

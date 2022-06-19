@@ -44,7 +44,8 @@
     "react-router-dom": "^6.3.0",
     "recoil": "^0.7.3-alpha.2",
     "styled-components": "^5.3.5",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "timeago-react": "^3.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
