@@ -21,7 +21,7 @@ bottom:0;
 left:0;
 right:0;
 z-index: 1;
-background-color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
+//background-color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
 `
 const Title = styled(motion.div)`
 position: absolute;
@@ -91,7 +91,7 @@ const CoverVideo = () => {
         </div>
         <motion.h2 variants={item} data-scroll data-scroll-delay='0.10' data-scroll-speed="2">Orbital</motion.h2>
     </Title>
-        <video src="/walking_girl.mp4" type="video/mp4" autoPlay muted loop/>
+        <video src="/walking_girls.mp4" type="video/mp4" autoPlay muted loop/>
     </VideoContainer>
   )
 }

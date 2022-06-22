@@ -50,6 +50,8 @@ const Profile = () => {
                 <button className='focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600'><CogIcon size='lg'/>TAGGED</button>
             </div>
         </div>
+
+        
     )
 }
 

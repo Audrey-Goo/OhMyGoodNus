@@ -157,7 +157,7 @@ align-items: center;
 padding: 10px;
 position: sticky;
 bottom: 0;
-background-color: white;
+background-color: #f7efe9;
 z-index: 100;
 `;
 
@@ -167,13 +167,13 @@ align-items: center;
 padding: 10px;
 position: sticky;
 bottom:0;
-background-color: white;
+background-color: #e5ded2;
 z-index: 100;
 `;
 
 const Header = styled.div`
     position: sticky;
-    background-color: white;
+    background-color: #e5ded2;
     z-index: 100;
     top: 0;
     display: flex;

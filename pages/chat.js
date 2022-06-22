@@ -22,18 +22,18 @@ export default function ChatTwo() {
   useEffect(() => {
     if (session.user) {
       setDoc(userRef, {
-        email: session.user.email,
-        lastSeen: serverTimestamp(),
-        photoURL: session.user.image,
+        // email: session.user.email,
+        // lastSeen: serverTimestamp(),
+        // photoURL: session.user.image,
       },
       {merge:true})
     }
   }, [session.user, userRef])
 
     return (
-        <div>
+        <div className='bg-brown'>
         <Sidebar />
-        <Chat />
+        <Chat />  
         </div>
     )
 }

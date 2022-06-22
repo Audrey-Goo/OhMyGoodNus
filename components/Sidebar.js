@@ -78,6 +78,7 @@ height: 100vh;
 min-width: 300px;
 max-width: 350px;
 overflow-y: scroll;
+background-color: #e5ded2;
 
 ::-webkit-scrollbar {
   display: none;
@@ -90,6 +91,7 @@ scrollbar-width: none;
 const Search = styled.div`
     display: flex;
     align-items: center;
+    background-color: #e5ded2;
     padding: 20px;
     border-radius: 2px;
 `
@@ -107,13 +109,14 @@ const SearchInput = styled.input`
     outline-width: 0;
     border: none;
     flex: 1;
+    background-color: #f7efe9;
 `
 
 const Header = styled.div`
     display: flex;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #dbc8b9;
     z-index: 1;
     justify-content: space-between;
     align-items: center;
