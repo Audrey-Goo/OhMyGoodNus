@@ -22,9 +22,9 @@ export default function ChatTwo() {
   useEffect(() => {
     if (session.user) {
       setDoc(userRef, {
-        // email: session.user.email,
-        // lastSeen: serverTimestamp(),
-        // photoURL: session.user.image,
+         email: session.user.email,
+         lastSeen: serverTimestamp(),
+         photoURL: session.user.image,
       },
       {merge:true})
     }

@@ -9,6 +9,7 @@ const ScrollTriggerProxy = () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 useEffect(() => {
 
     if(scroll){
@@ -30,6 +31,7 @@ useEffect(() => {
 return () => {
     ScrollTrigger.addEventListener('refresh', () => scroll?.update())
     ScrollTrigger.refresh();
+    if (scroll) {scroll.destroy();}
     }
 },[scroll])
     return null;
