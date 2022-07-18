@@ -7,17 +7,18 @@ import { useSession } from "next-auth/react"
 import { addDoc, collection, onSnapshot, orderBy, serverTimestamp, query, setDoc, deleteDoc, doc, where, getDocs } from 'firebase/firestore';
 import { auth, db } from '../firebase'
 import { useRouter } from "next/router"
+import { useCollection } from "react-firebase-hooks/firestore";
 
 function Chat({ id, users }) {
     const router = useRouter()
     const { data: session } = useSession();
-    //const q = query(collection(db,"users"), where('email','==', getRecipientEmail(users,session.user)))
-    //const [recipientSnapshot] = useCollection(q)
 
-    //const recipient = recipientSnapshot?.docs?.[0]?.data()
-    console.log(getRecipientEmail(users,session.user))
-    const recipientEmail = getRecipientEmail(users,session.user)
+    const recipientEmail = (session.user != null) ? getRecipientEmail(users,session.user) : "coding.solutions.incs@gmail.com";
+    console.log("DEBUG (recipientEmail): " + recipientEmail);
 
+    const q = (recipientEmail) ? query(collection(db,"users"), where('email','==', recipientEmail)) : null;
+    const [recipientSnapshot] = useCollection(q)
+    const recipient = recipientSnapshot?.docs?.[0]?.data()
 
     const enterChat = () => {
         router.push(`/chat/${id}`)
@@ -26,13 +27,13 @@ function Chat({ id, users }) {
 
   return (
     <Container onClick={enterChat}>
-        Hi
-      {/* {recipient ? (
+        {/* Hi */}
+      {recipient ? (
         <UserAvatar src={recipient?.photoURL} />
       ) : (
-        <UserAvatar>{recipientEmail[0]}</UserAvatar>
+        recipientEmail ? <UserAvatar>{recipientEmail}</UserAvatar> : null
       )}
-      <p>{recipientEmail}</p> */}
+      <p>{recipientEmail}</p>
     </Container>
   )
 

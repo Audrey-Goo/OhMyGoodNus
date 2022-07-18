@@ -15,8 +15,8 @@ function Chat({chat , messages}) {
   return (
     <Container>
       <Head>
-        <title>Chat</title> 
-        {/* Chat with {getRecipientEmail(chat.users,session.user)} */}
+        {/* <title>Chat</title>  */}
+        <title>Chat with {getRecipientEmail(chat.users,session.user)}</title>
       </Head>
       <Sidebar />
       <ChatContainer>

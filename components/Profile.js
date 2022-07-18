@@ -3,42 +3,75 @@
 import {
     CogIcon
 } from '@heroicons/react/outline';
+import ModalUserDetails from '../components/ModalUserDetails'
 
+import { useSession } from "next-auth/react"
+import { useState, useEffect } from 'react'
+import { collection, query, where, onSnapshot } from "firebase/firestore";
+import { db } from '../firebase'
+import { useRecoilState } from 'recoil'
+import { modalUserDetailsState } from "../atoms/modalUserDetailsAtom" 
 
 const Profile = () => {
+    const { data: session } = useSession();
+    const [numPost, setNumPost] = useState(0);
+    const [open, setOpen] = useRecoilState(modalUserDetailsState)
+    const [text, setText] = useState("");
+    const [website, setWebsite] = useState("");
+
+    useEffect(() => {
+        onSnapshot(query(collection(db,'profilePosts'), where("username", "==", session?.user?.username)), snapshot => {
+            var count = 0
+            snapshot.forEach((doc) => {
+                count += 1;
+            });
+            setNumPost(count)
+         });
+
+         onSnapshot(query(collection(db,'userDetails'), where("username", "==", session?.user?.username)), snapshot => {
+            snapshot.forEach((doc) => {
+                if (doc.get("text") !== undefined) {
+                    setText(doc.get("text"));
+                };
+                if (doc.get("website") !== undefined) {
+                    setWebsite(doc.get("website"));
+                };
+            });
+         });
+        }
+    , [db])
+
     return (
         <div className = "max-w-6xl mx-5 p-10 xl:mx-auto">
             <div className="grid grid-cols-4 gap-4"
             >
                 <div className='avatar'>
                     <div className='rounded-full w-36 h-36'>
-                        <img src='https://daisyui.com/
-                        tailwind-css-component-profile-1@94w.png' /> 
+                        <img src={session?.user?.image} /> 
                     </div>
                 </div>
                 <div className='col-span-2'>
-                    <span className='text-gray-700 text-2xl mr-4'>Audrey</span>
-                    <div className='cursor-pointer inline text-sm text-gray-700
-                    font-semibold p-1 px-2 border border-gray-200 rounded mr-4'>Edit 
-                    Profile</div>
+                    <span className='text-gray-700 text-2xl mr-4'>{session?.user?.username}</span>
+                    <button className='cursor-pointer inline text-sm text-gray-700
+                    font-semibold p-1 px-2 border border-gray-200 rounded mr-4' onClick={() => setOpen(true)}>Edit 
+                    Profile</button>
                     <CogIcon className='cursor-pointer h-6 inline flex-1' />
                     <div className='mt-4 flex'>
-                        <div><span className='font-semibold'>200</span> posts</div>
+                        <div className='ml-4'><span className='font-semibold'>{numPost}</span> posts</div>
                         <div className='ml-4'><span className='font-semibold'>200</span> followers </div>
                         <div className='m1-4'><span className='font-semibold'> 200</span> following</div>
                     </div>
                     <div >
                         <div className='  pt-3'>
-                        <span className='text-lg font-semibold text-gray-700'>Audrey javascript</span>
+                        <span className='text-lg font-semibold text-gray-700'>{text}</span>
                         </div>
                         <div className='  pt-3'>
-                            <p className='text-base text-blue-700 mr-2'>#javascript #vuehs #reader #blogger #digitalmarketer</p>
-                            <p className='text-base font-medium text-blue-700-mr-2'>https://www.youtube.com/</p>
+                            <p className='text-base font-medium text-blue-700-mr-2'>{website}</p>
                         </div>
                     </div>
                 </div>
 
-
+            <ModalUserDetails />
 
 
             </div>

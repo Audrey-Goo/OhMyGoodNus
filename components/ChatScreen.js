@@ -8,7 +8,7 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon'
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
 import Message from '../components/Message'
-import { collection, query, orderBy, serverTimestamp, setDoc, addDoc, doc} from "firebase/firestore";
+import { collection, where, query, orderBy, serverTimestamp, setDoc, addDoc, doc} from "firebase/firestore";
 import MicIcon from '@mui/icons-material/Mic'
 import { useRef, useState } from "react";
 import getRecipientEmail from "../utils/getRecipientEmail";
@@ -17,14 +17,16 @@ import TimeAgo from "timeago-react";
 function ChatScreen({chat, messages}) {
     const router = useRouter();
     const { data: session } = useSession();
-    const [input, setInput] = useState("")
-    const endOfMessagesRef = useRef(null)
+    const [input, setInput] = useState("");
+    const endOfMessagesRef = useRef(null);
 
-    const q = query(collection(db,'chats',router.query.id,'messages'), orderBy('timestamp', 'asc'))
-    const [messagesSnapshot] = useCollection(q)
-    //const [messagesSnapshot] = useCollection(db.collection('chats').doc(router.query.id).collection('messages').orderBy('timestamp', 'asc'))
+    const q = query(collection(db,'chats',router.query.id,'messages'), orderBy('timestamp', 'asc'));
+    const [messagesSnapshot] = useCollection(q);
+    // const [messagesSnapshot] = useCollection(db.collection('chats').doc(router.query.id).collection('messages').orderBy('timestamp', 'asc'))
 
-    //const [recipientSnapshot] = useCollection(db.collection('users').where('email','==',getRecipientEmail(chat.users, session.user)))
+    const q2 = query(collection(db,'users'),where('email','==',getRecipientEmail(chat.users, session.user)));
+    const [recipientSnapshot] = useCollection(q2);
+    // const [recipientSnapshot] = useCollection(db.collection('users').where('email','==',getRecipientEmail(chat.users, session.user)))
 
     const showMessages = () => {
         if (messagesSnapshot) {
@@ -60,6 +62,10 @@ function ChatScreen({chat, messages}) {
         }, { merge: true}
         )
 
+        setDoc(doc(db,"users",session.user.uid), {
+            lastSeen: serverTimestamp(),
+        }, { merge: true });
+
         // db.collection("users").doc(user.uid).set(
         //     {
         //         lastSeen: serverTimestamp(),
@@ -68,7 +74,7 @@ function ChatScreen({chat, messages}) {
         // );
 
 
-        addDoc(collection('chats',router.query.id,'messages'), {
+        addDoc(collection(db,'chats',router.query.id,'messages'), {
             timestamp: serverTimestamp(),
             message: input,
             user: session.user.email,
@@ -86,28 +92,28 @@ function ChatScreen({chat, messages}) {
         scrollToBottom();
     }
     
-    // const recipient = recipientSnapshot?.docs?.[0]?.data()
-    // const recipientEmail = getRecipientEmail(chat.users, session.user)
+    const recipient = recipientSnapshot?.docs?.[0]?.data()
+    const recipientEmail = getRecipientEmail(chat.users, session.user)
 
     return (
         <Container>
           <Header>
-            <Avatar />
+            {/* <Avatar /> */}
 
-            {/* {recipient ? (
+            {recipient ? (
                 <Avatar src={recipient?.photoURL} />
             ) : (
                 <Avatar>{recipientEmail[0]}</Avatar>
-            )} */}
+            )}
 
             <HeaderInformation>
-                <h3>RecipientEmail</h3>
+                {/* <h3>RecipientEmail</h3> */}
 
-                {/* {recipientEmail} */}
+                {recipientEmail}
 
-                <p>Last Seen ...</p>
+                {/* <p>Last Seen ...</p> */}
 
-                {/* {recipientSnapshot ? (
+                {recipientSnapshot ? (
                     <p>Last active: {" "}
                     {recipient?.lastSeen?.toDate() ? (
                         <TimeAgo datetime={recipient?.lastSeen?.toDate()} />
@@ -117,7 +123,7 @@ function ChatScreen({chat, messages}) {
                     </p>
                 ): (
                     <p>Loading last active...</p>
-                )} */}
+                )}
 
 
             </HeaderInformation>
