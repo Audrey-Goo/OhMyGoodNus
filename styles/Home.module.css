@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.body{
+  overflow-x: hidden;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -113,4 +117,10 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.card-img-top{
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
 }
