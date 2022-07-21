@@ -10,7 +10,8 @@ import {
     TemplateIcon,
     UserCircleIcon,
     ChatAltIcon,
-    MoonIcon
+    MoonIcon,
+    ShoppingCartIcon
 } from "@heroicons/react/outline"
 import { HomeIcon } from "@heroicons/react/solid"
 import { signIn, signOut, useSession } from "next-auth/react"
@@ -70,6 +71,7 @@ function Header() {
           <UserCircleIcon onClick={() => router.push("/profile")} className="navBtn" />
           <TemplateIcon onClick={() => router.push("/maincatalogue")} className="navBtn" />
           <NewspaperIcon onClick={() => router.push("/articles")} className="navBtn" />
+          <ShoppingCartIcon onClick={() => router.push("/shop")} className="navBtn" />
 
           <img onClick={signOut} src = {session.user.image} 
           alt = "profile pic" 

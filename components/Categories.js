@@ -49,363 +49,408 @@ import img46 from "../public/Images/wwovenbucket.jpg"
 const Categories = [
     {
         id:1,   
-        title:"Air Jordans",
-        price: 213,
+        title:"Men Air Jordans",
+        Theme: 213,
         category: "Men Footwear",
         image:img1,
-        text: "Hello"
+        text: "Shoes that suit many occasions",
+        link: "https://snkrdunk.com/en/sneakers?type=hottest"
     },
     {
         id:2,
         title:"Mens Beanie",
-        price: 213,
+        Theme: 213,
         category: "Men Headwear",
         image:img2,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.joom.com/en/best/beanie"
     },
     {
         id:3,
         title:"Mens Bracelet",
-        price: 213,
+        Theme: 213,
         category: "Men Accessories",
         image:img3,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.zalora.sg/men/accessories/bracelets/"
     },
     {
         id:4,
         title:"Mens Cap",
-        price: 213,
+        Theme: 213,
         category: "Men Headwear",
         image:img4,
         text: "Hello",
+        link: "https://shopee.sg/search?keyword=men%20cap"
     },
     {
         id:5,
         title:"Mens Chain Necklace",
-        price: 213,
+        Theme: 213,
         category: "Men Accessories",
         image:img5,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.asos.com/men/jewellery/necklaces/cat/?cid=13836"
     },
     {
         id:6,
         title:"Mens Converse High",
-        price: 213,
+        Theme: 213,
         category: "Men Footwear",
         image:img6,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.converse.com/shop/mens-high-top-shoes"
     },
     {
         id:7,
         title:"Mens Converse Low",
-        price: 213,
+        Theme: 213,
         category: "Men Footwear",
         image:img7,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.converse.com/shop/mens-low-top-shoes"
     },
     {
         id:8,
         title:"Mens Dr martens",
-        price: 213,
+        Theme: 213,
         category: "Men Footwear",
         image:img8,
-        text: "Hello"
+        text: "Hello",
+        link: "https://shopee.sg/drmartenssg"
     },
     {
         id:9,
         title:"Mens Mask Strap",
-        price: 213,
+        Theme: 213,
         category: "Men Accessories",
         image:img9,
-        text: "Hello"
+        text: "Hello",
+        link: "https://shopee.sg/list/Mask%20Chain"
     },
     {
         id:10,
         title:"Mens Necklace",
-        price: 213,
+        Theme: 213,
         category: "Men Accessories",
         image:img10,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.thekoreanfashion.com/collections/necklaces"
     },
     {
         id:11,
         title:"Mens Ring",
-        price: 213,
+        Theme: 213,
         category: "Men Accessories",
         image:img11,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.thekoreanfashion.com/collections/rings"
     },
     {
         id:12,
         title:"Mens Slides",
-        price: 213,
+        Theme: 213,
         category: "Men Footwear",
         image:img12,
-        text: "Hello"
+        text: "Hello",
+        link: "https://shopee.sg/search?category=11012767&keyword=korean%20sandal&subcategory=11012788"
     },
     {
         id:13,
         title:"Mens Sunglasses",
-        price: 213,
+        Theme: 213,
         category: "Men Accessories",
         image:img13,
-        text: "Hello"
+        text: "Hello",
+        link: "https://www.monocle.com.sg/sunglasses"
     },
     {
         id:14,
         title:"Mens Buckethat",
-        price: 213,
+        Theme: 213,
         category: "Men Headwear",
         image:img14,
-        text: "Hello"
+        text: "Hello",
+        link: "https://shopee.sg/search?category=11013077&keyword=bucket%20hat&subcategory=11027792"
     },
     {
         id:15,
         title:"Womens Oversized Shirt",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img15,
-        text: "Hello"
+        text: "Refresh your wardrobe foundations. Worn in a relaxed, oversized fit.",
+        link: "https://www.theeditorsmarket.com/search-products?keys=oversized%20shirt"
     },
     {
         id:16,
         title:"Womens Tiered Dress",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img16,
-        text: "Hello"
+        text: "Plenty of flare and flair. Cut from airy linen with a structured drape, such dresses are a summer staple.",
+        link: "https://www.theeditorsmarket.com/categories/womenswear/dresses"
     },
     {
         id:17,
         title:"Womens Halter-Neck Knit Top",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img17,
-        text: "Hello"
+        text: "Summer’s it-knit with a flattering criss-cross neckline.",
+        link: "https://www.theeditorsmarket.com/search-products?keys=halter%20top"
     },
     {
         id:18,
         title:"Womens Ribbon Tie Top",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img18,
-        text: "Hello"
+        text: "Light breezy pieces are the perfect solutions to stay cool this summer.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/tops?style=1130&style=1004&style=1139"
     },
     {
         id:19,
         title:"Womens Eyelet Ball Sleeve Top",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img19,
-        text: "Hello"
+        text: "Conservative yet feminine tops make ideal work essentials.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/tops?style=983"
     },
     {
         id:20,
         title:"Womens Tailored Shorts",
-        price: 213,
+        Theme: 213,
         category: "Women Bottoms",
         image:img20,
-        text: "Hello"
+        text: "An easy option for every occasion.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/shorts-skorts?erp_subcategory=539&lines=1699&configurable_children.color_family=605&configurable_children.color_family=608&configurable_children.color_family=614&configurable_children.color_family=620&configurable_children.color_family=617&configurable_children.color_family=635&configurable_children.color_family=638"
     },
     {
         id:21,
         title:"Womens Linen Ruched Skorts",
-        price: 213,
+        Theme: 213,
         category: "Women Bottoms",
         image:img21,
-        text: "Hello"
+        text: "A fun alternative to shorts with a feminine twist.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/shorts-skorts?erp_subcategory=545"
     },
     {
         id:22,
         title:"Womens Tiered Long Skirt",
-        price: 213,
+        Theme: 213,
         category: "Women Bottoms",
         image:img22,
-        text: "Hello"
+        text: "Easy, breezy and comfortable to move around in.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/skirts?length=1205&length=18314&length=1202&length=1199&length=1223"
     },
     {
         id:23,
         title:"Womens A-Line Short Skirt",
-        price: 213,
+        Theme: 213,
         category: "Women Bottoms",
         image:img23,
-        text: "Hello"
+        text: "The classic silhouette to rely on. Elongate the appearance of your legs with a sweet and feminine look.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/skirts?length=1196"
     },
     {
         id:24,
         title:"Womens High Waisted Straight Leg Pants",
-        price: 213,
+        Theme: 213,
         category: "Women Bottoms",
         image:img24,
-        text: "Hello"
+        text: "Comfortable work appropriate basics. Why complicate things?",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/pants"
     },
     {
         id:25,
         title:"Womens Denim Jeans",
-        price: 213,
+        Theme: 213,
         category: "Women Bottoms",
         image:img25,
-        text: "Hello"
+        text: "A timeless, classic apparel that goes well with everything.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/jeans"
     },
     {
         id:26,
         title:"Womens Wrap Romper",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img26,
-        text: "Hello"
+        text: "Easily look put-together with this effortless piece.",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/jumpsuits?length=1196"
     },
     {
         id:27,
         title:"Womens Relaxed Wide Leg Jumpsuit",
-        price: 213,
+        Theme: 213,
         category: "Women Tops",
         image:img27,
-        text: "Hello"
+        text: "A piece for morning coffee meetings to nights out with the girls.llo",
+        link: "https://www.lovebonito.com/sg/shop/apparel-accessories/jumpsuits?length=1223&length=1208&length=1199&length=1220&length=1205&length=18314&length=1202"
     },
     {
         id:28,
         title:"Womens Ankle-Strap Flat Sandals",
-        price: 213,
+        Theme: 213,
         category: "Women Footwear",
         image:img28,
-        text: "Hello"
+        text: "The epitome of pure elegance, these are designed with sleek straps and a fresh white hue that will go well with a wide range of looks.",
+        link: "https://www.charleskeith.com/sg/shoes/sandals"
     },
     {
         id:29,
         title:"Womens Pointed-Toe Pumps",
-        price: 213,
+        Theme: 213,
         category: "Women Footwear",
         image:img29,
-        text: "Hello"
+        text: "Say hello to your new pair of go-to mules this season. These classic black heels are a must-have that will slot seamlessly with all your outfits throughout the year.",
+        link: "https://www.charleskeith.com/sg/shoes/heels"
     },
     {
         id:30,
         title:"Womens Slip-On Platform Ankle Boots",
-        price: 213,
+        Theme: 213,
         category: "Women Footwear",
         image:img30,
-        text: "Hello"
+        text: "Rain or shine, these ankle boots will be your versatile everyday staple. The slip-on design saves you a few precious seconds in the morning, whilst the sleek black colour is always easy to match.",
+        link: "https://www.charleskeith.com/sg/shoes/boots"
     },
     {
         id:31,
         title:"Womens Chunky Loafers",
-        price: 213,
+        Theme: 213,
         category: "Women Footwear",
         image:img31,
-        text: "Hello"
+        text: "Uplift your weekday wardrobe with these stunning loafers. Whilst the covered almond toe brings an air of sophistication, the cleated block heel and raised sole serve up some trendy modern style.",
+        link: "https://www.charleskeith.com/sg/shoes/loafers"
     },
     {
         id:32,
         title:"Womens Nike Air Force 1 '07",
-        price: 213,
+        Theme: 213,
         category: "Women Footwear",
         image:img32,
-        text: "Hello"
+        text: "The perfect go-to sneaker for every occasion.",
+        link: "https://www.nike.com/sg/w/womens-lifestyle-shoes-13jrmz5e1x6zy7ok"
     },
     {
         id:33,
         title:"Womens Gold Posie Cubic Studs",
-        price: 213,
+        Theme: 213,
         category: "Women Accessories",
         image:img33,
-        text: "Hello"
+        text: "This versatile butterfly stud earring is a must-have addition for every woman's jewellery box. Stack Posie with just about anything in your jewellery box.",
+        link: "https://www.byinviteonly.shop/collections/earrings"
     },
     {
         id:34,
         title:"Womens Gold Eden Cubic Necklace",
-        price: 213,
+        Theme: 213,
         category: "Women Accessories",
         image:img34,
-        text: "Hello"
+        text: "A classic floral chain necklace every girl needs.",
+        link: "https://www.byinviteonly.shop/collections/necklace"
     },
     {
         id:35,
         title:"Womens Pearl Bracelet",
-        price: 213,
+        Theme: 213,
         category: "Women Accessories",
         image:img35,
-        text: "Hello"
+        text: "The best way to add a touch of glamour to your look. This lovely bracelet is adorned with iridescent freshwater pearls.",
+        link: "https://www.byinviteonly.shop/collections/bracelet"
     },
     {
         id:36,
         title:"Womens Silver Ring",
-        price: 213,
+        Theme: 213,
         category: "Women Accessories",
         image:img36,
-        text: "Hello"
+        text: "A minimalist classic – one that's slightly adjustable and a quintessential addition to your collection.",
+        link: "https://www.byinviteonly.shop/collections/rings"
     },
     {
         id:37,
         title:"Womens Multi-way Mask Chain",
-        price: 213,
+        Theme: 213,
         category: "Women Accessories",
         image:img37,
-        text: "Hello"
+        text: "Meet the accessory of the season – the mask chain! Attach it to your mask, wear it as a colorful beaded necklace, or use it as a sunnies holder via its rubber loops. Never leave the house without this trendy accessory.",
+        link: "https://www.byinviteonly.shop/collections/multi-way-mask-chain"
     },
     {
         id:38,
         title:"Womens Hair Claw",
-        price: 213,
+        Theme: 213,
         category: "Women Headwear",
         image:img38,
-        text: "Hello"
+        text: "A summer essential.",
+        link: "https://cottonon.com/SG/co/?q=hair"
     },
     {
         id:40,
         title:"Womens Bucket Hat",
-        price: 213,
+        Theme: 213,
         category: "Women Headwear",
         image:img40,
-        text: "Hello"
+        text: "Slip into that seasonal groove when you pull on this Bucket Hat.",
+        link: "https://www.jdsports.com.sg/p/bucket-hats/"
     },
     {
         id:41,
         title:"Womens Baseball Cap",
-        price: 213,
+        Theme: 213,
         category: "Women Headwear",
         image:img41,
-        text: "Hello"
+        text: "Easily packed when not in use and a simple solution for those who don't feel comfortable wearing a full-on sun hat, baseball caps are a great option to cover up those bad hair days in a hurry.",
+        link: "https://www.jdsports.com.sg/women/p/caps/"
     },
     {
         id:42,
         title:"Womens Nike Futura Mini Backpack",
-        price: 213,
+        Theme: 213,
         category: "Women Bag",
         image:img42,
-        text: "Hello"
+        text: "Make your own rules with this mini-but-mighty backpack.",
+        link: "https://www.jdsports.com.sg/p/backpacks/"
     },
     {
         id:43,
         title:"Womens Belted Bag",
-        price: 213,
+        Theme: 213,
         category: "Women Bag",
         image:img43,
-        text: "Hello"
+        text: "Succumb to fashion’s most divisive spring staple, the double handle bag. Carry this sophisticated bag with a floral maxi dress and trapeze-heel sandals.",
+        link: "https://www.charleskeith.com/sg/bags/handbags"
     },
     {
         id:44,
         title:"Womens Leather Saddle Bag",
-        price: 213,
+        Theme: 213,
         category: "Women Bag",
         image:img44,
-        text: "Hello"
+        text: "Up the ante on your style game this season with this pretty piece that was crafted from luxurious leather. Made for the modern woman, this bag is both daytime-worthy and after-dark appropriate.",
+        link: "https://www.charleskeith.com/sg/bags/crossbody-bags"
     },
     {
         id:45,
         title:"Womens Turn-Lock Evening Clutch",
-        price: 213,
+        Theme: 213,
         category: "Women Bag",
         image:img45,
-        text: "Hello"
+        text: "Liven up any look with this small-sized evening clutch. Crafted with a quilted body and rendered in an effortlessly versatile beige shade, match this piece with any outfit with ease.",
+        link: "https://www.charleskeith.com/sg/bags/clutches"
     },
     {
         id:46,
         title:"Womens Woven Bucket Bag",
-        price: 213,
+        Theme: 213,
         category: "Women Bag",
         image:img46,
-        text: "Hello"
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.charleskeith.com/sg/bags/bucket-bags"
     }
 ]
 
