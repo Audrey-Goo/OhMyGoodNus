@@ -5,7 +5,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <>
+      <div className="bg-beige">
       <Category/>
+      </div>
     </>
   )
 }

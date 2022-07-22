@@ -9,14 +9,16 @@ export default function PProfile() {
     const { data: session } = useSession();
 
     return (
-        <main className={`grid grid-cols-1 md:grid-cols-2 md:max-w-3xl xl:grid-cols-3 xl:max-w-6xl mx-auto ${session &&
+        <main className={`bg-beige p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 ${session &&
         "!grid-cols-1 !max"}`}>
           <section className='col-span-2'>
           <Header />
             <Profile />
-            <PostsProfile />
           </section>
-    
+          <div className="grid grid-cols-4">
+            <PostsProfile />
+          </div>
+
           <ModalProfile />
           {/* {session && (
             <section className='hidden xl:inline-grid md:col-span-1'>

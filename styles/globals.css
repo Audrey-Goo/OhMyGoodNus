@@ -63,3 +63,48 @@ a {
   color: #766963; 
   font-family: 'Times New Roman', serif; 
 }
+
+.shop-header { 
+  padding: 30px; 
+  text-align: center; 
+  background-color: #e5ded2; 
+  font-size: 80px; 
+  color: #4d4440; 
+  font-family: 'Times New Roman', serif; 
+} 
+
+.shop-button {
+  background-color: #766963; 
+  border: none;
+  width: 300px;
+  margin-bottom: 16px;
+  color: #e5ded2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.shop-button:hover {
+  background-color: #e5ded2;
+  color: #766963;
+}
+
+.shopnow-button {
+  background-color: #766963; 
+  border: none;
+  margin-bottom: 16px;
+  color: #e5ded2;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.shopnow-button:hover {
+  background-color: #e5ded2;
+  color: #766963;
+}

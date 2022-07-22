@@ -12,7 +12,6 @@ import img11 from "../public/Images/ring.jpg"
 import img12 from "../public/Images/slides.jpg"
 import img13 from "../public/Images/sunglasses.jpg"
 import img14 from "../public/Images/buckethat.jpg"
-
 import img15 from "../public/Images/woversized.jpg"
 import img16 from "../public/Images/wtiereddress.jpg"
 import img17 from "../public/Images/whalter.jpg"
@@ -44,6 +43,28 @@ import img43 from "../public/Images/wbelted.jpg"
 import img44 from "../public/Images/wleathersaddle.jpg"
 import img45 from "../public/Images/wturnlock.jpg"
 import img46 from "../public/Images/wwovenbucket.jpg"
+
+import img47 from "../public/Images/longoversized.jpg"
+import img48 from "../public/Images/shortsleeve.jpg"
+import img49 from "../public/Images/shortsleeve2.jpg"
+import img50 from "../public/Images/bomber.jpg"
+import img51 from "../public/Images/blazer.jpg"
+import img52 from "../public/Images/varsity.jpg"
+import img53 from "../public/Images/denimjacket.jpg"
+import img54 from "../public/Images/sweater.jpg"
+import img55 from "../public/Images/vest.jpg"
+import img56 from "../public/Images/polo.jpg"
+import img57 from "../public/Images/graphic.jpg"
+import img58 from "../public/Images/uniqlo.jpg"
+import img59 from "../public/Images/turtleneck.jpg"
+import img60 from "../public/Images/straightcut.jpg"
+import img61 from "../public/Images/ripped.jpg"
+import img62 from "../public/Images/cargo.jpg"
+import img63 from "../public/Images/wideleg.jpg"
+import img64 from "../public/Images/drawstring.jpg"
+import img65 from "../public/Images/elastic.jpg"
+
+
 
 
 const Categories = [
@@ -451,6 +472,177 @@ const Categories = [
         image:img46,
         text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
         link: "https://www.charleskeith.com/sg/bags/bucket-bags"
+    },
+    {
+        id:47,
+        title:"Mens Long Sleeve Shirt",
+        Theme: 213,
+        category: "Men Tops",
+        image:img47,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.kooding.com/may-oversized-shirt/p/224523"
+    },
+    {
+        id:48,
+        title:"Mens Short Sleeve Shirt",
+        Theme: 213,
+        category: "Men Tops",
+        image:img48,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.kooding.com/add-pajama-shirt/p/224537"
+    },
+    {
+        id:49,
+        title:"Mens Casual Shirt",
+        Theme: 213,
+        category: "Men Tops",
+        image:img49,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.zalora.sg/cotton-on-ace-short-sleeve-shirt-green-2843733.html"
+    },
+    {
+        id:50,
+        title:"Mens Leather Bomber Jacket",
+        Theme: 213,
+        category: "Men Tops",
+        image:img50,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.zara.com/sg/en/contrast-bomber-jacket-p05070475.html?v1=171244561&v2=2113025"
+    },
+    {
+        id:51,
+        title:"Mens Blazer",
+        Theme: 213,
+        category: "Men Tops",
+        image:img51,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.kooding.com/madeleine-two-buttons-jacket/p/207544"
+    },
+    {
+        id:52,
+        title:"Mens Varsity Jacket",
+        Theme: 213,
+        category: "Men Tops",
+        image:img52,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.asos.com/asos-design/asos-design-oversized-jersey-harrington-jacket-in-beige-with-multi-placement-varsity-prints/prd/200787983?colourWayId=200787994&cid=50300"
+    },
+    {
+        id:53,
+        title:"Mens Denim Jacket",
+        Theme: 213,
+        category: "Men Tops",
+        image:img53,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.zara.com/sg/en/reworked-denim-jacket-p05585361.html?v1=169629291&v2=2113015"
+    },
+    {
+        id:54,
+        title:"Mens Sweater",
+        Theme: 213,
+        category: "Men Tops",
+        image:img54,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.zara.com/sg/en/textured-sweater-p02632405.html?v1=173972263&v2=2113119"
+    },
+    {
+        id:55,
+        title:"Mens Vest",
+        Theme: 213,
+        category: "Men Tops",
+        image:img55,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.kooding.com/ready-soft-v-neck-vest/p/273539"
+    },
+    {
+        id:56,
+        title:"Mens Long Sleeve Polo",
+        Theme: 213,
+        category: "Men Tops",
+        image:img56,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.kooding.com/unisex-rugby-sweatshirt-navy/p/321121"
+    },
+    {
+        id:57,
+        title:"Mens Graphic Tee",
+        Theme: 213,
+        category: "Men Tops",
+        image:img57,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.junkfoodclothing.com/products/alice-curiouser"
+    },
+    {
+        id:58,
+        title:"Mens Oversized Tee",
+        Theme: 213,
+        category: "Men Tops",
+        image:img58,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.uniqlo.com/sg/en/products/E425974-000?colorCode=COL32&sizeCode=SMA002"
+    },
+    {
+        id:59,
+        title:"Mens Turtleneck",
+        Theme: 213,
+        category: "Men Tops",
+        image:img59,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.kooding.com/unisex-logo2-turtleneck-black/p/222380"
+    },
+    {
+        id:60,
+        title:"Mens Straight Cut Pants",
+        Theme: 213,
+        category: "Men Bottoms",
+        image:img60,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.yesstyle.com/en/graycious-straight-leg-dress-pants/info.html/pid.1111958602"
+    },
+    {
+        id:61,
+        title:"Mens Ripped Jeans",
+        Theme: 213,
+        category: "Men Bottoms",
+        image:img61,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.zara.com/sg/en/skinny-split-hem-jeans-p05585430.html?v1=182271613&v2=2119340"
+    },
+    {
+        id:62,
+        title:"Mens Cargo Pants",
+        Theme: 213,
+        category: "Men Bottoms",
+        image:img62,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://cottonon.com/SG/military-cargo-pant/3611092-02.html?dwvar_3611092-02_color=3611092-02&cgid=mens-cargo&originalPid=3611092-02#start=6&sz=60"
+    },
+    {
+        id:63,
+        title:"Mens Wide Leg Pants",
+        Theme: 213,
+        category: "Men Bottoms",
+        image:img63,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.yesstyle.com/en/diphon-plain-straight-leg-wide-leg-pants/info.html/pid.1105373060"
+    },
+    {
+        id:64,
+        title:"Mens Drawstring Pants",
+        Theme: 213,
+        category: "Men Bottoms",
+        image:img64,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.thekoreanfashion.com/collections/newest-pants/products/drawstring-straight-track-pants"
+    },
+    {
+        id:65,
+        title:"Mens Elastic Striped Pants",
+        Theme: 213,
+        category: "Men Bottoms",
+        image:img65,
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        link: "https://www.thekoreanfashion.com/collections/newest-pants/products/loose-striped-leg-pants"
     }
 ]
 
