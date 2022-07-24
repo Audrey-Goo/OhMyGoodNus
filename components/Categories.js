@@ -83,7 +83,7 @@ const Categories = [
         Theme: 213,
         category: "Men Headwear",
         image:img2,
-        text: "Hello",
+        text: "A warm must-have accessory, this beanie is available in a variety of solid colors or with a contrasting trim.",
         link: "https://www.joom.com/en/best/beanie"
     },
     {
@@ -92,7 +92,7 @@ const Categories = [
         Theme: 213,
         category: "Men Accessories",
         image:img3,
-        text: "Hello",
+        text: "Stylish and fashionable, bracelets are the perfect companion to every outfit.",
         link: "https://www.zalora.sg/men/accessories/bracelets/"
     },
     {
@@ -101,7 +101,7 @@ const Categories = [
         Theme: 213,
         category: "Men Headwear",
         image:img4,
-        text: "Hello",
+        text: "A sporty spirit with a metropolitan look. Perfect for off duty days, this pure cotton baseball cap is perfect for a chic look.",
         link: "https://shopee.sg/search?keyword=men%20cap"
     },
     {
@@ -110,7 +110,7 @@ const Categories = [
         Theme: 213,
         category: "Men Accessories",
         image:img5,
-        text: "Hello",
+        text: "This simple accessory spices up any outfit.",
         link: "https://www.asos.com/men/jewellery/necklaces/cat/?cid=13836"
     },
     {
@@ -119,7 +119,7 @@ const Categories = [
         Theme: 213,
         category: "Men Footwear",
         image:img6,
-        text: "Hello",
+        text: "High-cut shoes give an edge to any look while keeping it casual.",
         link: "https://www.converse.com/shop/mens-high-top-shoes"
     },
     {
@@ -128,7 +128,7 @@ const Categories = [
         Theme: 213,
         category: "Men Footwear",
         image:img7,
-        text: "Hello",
+        text: "Classic and iconic, the premium canvas provides both comfort and style",
         link: "https://www.converse.com/shop/mens-low-top-shoes"
     },
     {
@@ -137,7 +137,7 @@ const Categories = [
         Theme: 213,
         category: "Men Footwear",
         image:img8,
-        text: "Hello",
+        text: "Durable and famously stiff to start, Dr Martens' Smooth Leather can be polished to a dapper shine or artfully scuffed-up depending on your preference.",
         link: "https://shopee.sg/drmartenssg"
     },
     {
@@ -146,7 +146,7 @@ const Categories = [
         Theme: 213,
         category: "Men Accessories",
         image:img9,
-        text: "Hello",
+        text: "These versatile mask accessories are here to stay. Relieve the strain on your ears from long periods of mask wearing.",
         link: "https://shopee.sg/list/Mask%20Chain"
     },
     {
@@ -155,7 +155,7 @@ const Categories = [
         Theme: 213,
         category: "Men Accessories",
         image:img10,
-        text: "Hello",
+        text: "An accessory does more than just look good – it symbolizes your journey, an adventure, a special moment in life or even reminds you of a time and place. What story will yours tell?",
         link: "https://www.thekoreanfashion.com/collections/necklaces"
     },
     {
@@ -164,7 +164,7 @@ const Categories = [
         Theme: 213,
         category: "Men Accessories",
         image:img11,
-        text: "Hello",
+        text: "A subtle addition to your fingers to elevate your outfit.",
         link: "https://www.thekoreanfashion.com/collections/rings"
     },
     {
@@ -173,7 +173,7 @@ const Categories = [
         Theme: 213,
         category: "Men Footwear",
         image:img12,
-        text: "Hello",
+        text: "Keep cool and comfortable with these lounge footwear. The go-to for lazy days.",
         link: "https://shopee.sg/search?category=11012767&keyword=korean%20sandal&subcategory=11012788"
     },
     {
@@ -182,7 +182,7 @@ const Categories = [
         Theme: 213,
         category: "Men Accessories",
         image:img13,
-        text: "Hello",
+        text: "The only thing separating you from effortlessly spiffy celebs might just be the right set of quality shades.",
         link: "https://www.monocle.com.sg/sunglasses"
     },
     {
@@ -191,7 +191,7 @@ const Categories = [
         Theme: 213,
         category: "Men Headwear",
         image:img14,
-        text: "Hello",
+        text: "90s fashion has been coming back big time over the last year or so. Alongside all the plaid and wide-fitting denim is another, equally polarizing item: bucket hats. This loosely structured headwear is ideal for a chilled out casual summer outfit and fits in perfectly with the relaxed vibe that is dominating menswear at the moment.",
         link: "https://shopee.sg/search?category=11013077&keyword=bucket%20hat&subcategory=11027792"
     },
     {
@@ -473,95 +473,95 @@ const Categories = [
         text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
         link: "https://www.charleskeith.com/sg/bags/bucket-bags"
     },
-    {
-        id:47,
-        title:"Mens Long Sleeve Shirt",
-        Theme: 213,
-        category: "Men Tops",
-        image:img47,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.kooding.com/may-oversized-shirt/p/224523"
-    },
-    {
-        id:48,
-        title:"Mens Short Sleeve Shirt",
-        Theme: 213,
-        category: "Men Tops",
-        image:img48,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.kooding.com/add-pajama-shirt/p/224537"
-    },
-    {
-        id:49,
-        title:"Mens Casual Shirt",
-        Theme: 213,
-        category: "Men Tops",
-        image:img49,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.zalora.sg/cotton-on-ace-short-sleeve-shirt-green-2843733.html"
-    },
-    {
-        id:50,
-        title:"Mens Leather Bomber Jacket",
-        Theme: 213,
-        category: "Men Tops",
-        image:img50,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.zara.com/sg/en/contrast-bomber-jacket-p05070475.html?v1=171244561&v2=2113025"
-    },
-    {
-        id:51,
-        title:"Mens Blazer",
-        Theme: 213,
-        category: "Men Tops",
-        image:img51,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.kooding.com/madeleine-two-buttons-jacket/p/207544"
-    },
-    {
-        id:52,
-        title:"Mens Varsity Jacket",
-        Theme: 213,
-        category: "Men Tops",
-        image:img52,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.asos.com/asos-design/asos-design-oversized-jersey-harrington-jacket-in-beige-with-multi-placement-varsity-prints/prd/200787983?colourWayId=200787994&cid=50300"
-    },
-    {
-        id:53,
-        title:"Mens Denim Jacket",
-        Theme: 213,
-        category: "Men Tops",
-        image:img53,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.zara.com/sg/en/reworked-denim-jacket-p05585361.html?v1=169629291&v2=2113015"
-    },
-    {
-        id:54,
-        title:"Mens Sweater",
-        Theme: 213,
-        category: "Men Tops",
-        image:img54,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.zara.com/sg/en/textured-sweater-p02632405.html?v1=173972263&v2=2113119"
-    },
-    {
-        id:55,
-        title:"Mens Vest",
-        Theme: 213,
-        category: "Men Tops",
-        image:img55,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.kooding.com/ready-soft-v-neck-vest/p/273539"
-    },
-    {
-        id:56,
-        title:"Mens Long Sleeve Polo",
-        Theme: 213,
-        category: "Men Tops",
-        image:img56,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.kooding.com/unisex-rugby-sweatshirt-navy/p/321121"
+    { 
+        id:47, 
+        title:"Mens Long Sleeve Shirt", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img47, 
+        text: "A timeless classic wardrobe staple piece for every male.", 
+        link: "https://www.kooding.com/may-oversized-shirt/p/224523" 
+    }, 
+    { 
+        id:48, 
+        title:"Mens Short Sleeve Shirt", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img48, 
+        text: "Stay cool this summer with this relaxed piece that can be styled up or down.", 
+        link: "https://www.kooding.com/add-pajama-shirt/p/224537" 
+    }, 
+    { 
+        id:49, 
+        title:"Mens Casual Shirt", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img49, 
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.", 
+        link: "https://www.zalora.sg/cotton-on-ace-short-sleeve-shirt-green-2843733.html" 
+    }, 
+    { 
+        id:50, 
+        title:"Mens Leather Bomber Jacket", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img50, 
+        text: "Matching faux leather jacket with a stretch collar and long sleeves. Hip welt pockets, an inside pocket, ribbed hem and a zip-up front hidden by a snap-button placket.", 
+        link: "https://www.zara.com/sg/en/contrast-bomber-jacket-p05070475.html?v1=171244561&v2=2113025" 
+    }, 
+    { 
+        id:51, 
+        title:"Mens Blazer", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img51, 
+        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.", 
+        link: "https://www.kooding.com/madeleine-two-buttons-jacket/p/207544" 
+    }, 
+    { 
+        id:52, 
+        title:"Mens Varsity Jacket", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img52, 
+        text: "Varsity jackets are the latest preppy item to hold influence beyond the soccer pitch, as seen on show-goers in Copenhagen and on the catwalks in Paris. ", 
+        link: "https://www.asos.com/asos-design/asos-design-oversized-jersey-harrington-jacket-in-beige-with-multi-placement-varsity-prints/prd/200787983?colourWayId=200787994&cid=50300" 
+    }, 
+    { 
+        id:53, 
+        title:"Mens Denim Jacket", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img53, 
+        text: "The Americana-inspired jean jacket is simply one of those classic staples that will always hold timeless appeal.", 
+        link: "https://www.zara.com/sg/en/reworked-denim-jacket-p05585361.html?v1=169629291&v2=2113015" 
+    }, 
+    { 
+        id:54, 
+        title:"Mens Sweater", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img54, 
+        text: "Stay warm and cosy in these soft knits.", 
+        link: "https://www.zara.com/sg/en/textured-sweater-p02632405.html?v1=173972263&v2=2113119" 
+    }, 
+    { 
+        id:55, 
+        title:"Mens Vest", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img55, 
+        text: "There are tons of great men’s vests on the market right now, and the new crop of vests come in a range of silhouettes and materials, including cozy knits, sleek leathers, or cool, techy fabrics.", 
+        link: "https://www.kooding.com/ready-soft-v-neck-vest/p/273539" 
+    }, 
+    { 
+        id:56, 
+        title:"Mens Long Sleeve Polo", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img56, 
+        text: "Where classic meets comfort. It’s made to last the long haul, and look good doing it.", 
+        link: "https://www.kooding.com/unisex-rugby-sweatshirt-navy/p/321121" 
     },
     {
         id:57,
@@ -569,81 +569,81 @@ const Categories = [
         Theme: 213,
         category: "Men Tops",
         image:img57,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
+        text: "Wearing a classic T-shirt is not only a nostalgic move but also a great shortcut to making a chic statement",
         link: "https://www.junkfoodclothing.com/products/alice-curiouser"
     },
-    {
-        id:58,
-        title:"Mens Oversized Tee",
-        Theme: 213,
-        category: "Men Tops",
-        image:img58,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.uniqlo.com/sg/en/products/E425974-000?colorCode=COL32&sizeCode=SMA002"
-    },
-    {
-        id:59,
-        title:"Mens Turtleneck",
-        Theme: 213,
-        category: "Men Tops",
-        image:img59,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.kooding.com/unisex-logo2-turtleneck-black/p/222380"
-    },
-    {
-        id:60,
-        title:"Mens Straight Cut Pants",
-        Theme: 213,
-        category: "Men Bottoms",
-        image:img60,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.yesstyle.com/en/graycious-straight-leg-dress-pants/info.html/pid.1111958602"
-    },
-    {
-        id:61,
-        title:"Mens Ripped Jeans",
-        Theme: 213,
-        category: "Men Bottoms",
-        image:img61,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.zara.com/sg/en/skinny-split-hem-jeans-p05585430.html?v1=182271613&v2=2119340"
-    },
-    {
-        id:62,
-        title:"Mens Cargo Pants",
-        Theme: 213,
-        category: "Men Bottoms",
-        image:img62,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://cottonon.com/SG/military-cargo-pant/3611092-02.html?dwvar_3611092-02_color=3611092-02&cgid=mens-cargo&originalPid=3611092-02#start=6&sz=60"
-    },
-    {
-        id:63,
-        title:"Mens Wide Leg Pants",
-        Theme: 213,
-        category: "Men Bottoms",
-        image:img63,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.yesstyle.com/en/diphon-plain-straight-leg-wide-leg-pants/info.html/pid.1105373060"
-    },
-    {
-        id:64,
-        title:"Mens Drawstring Pants",
-        Theme: 213,
-        category: "Men Bottoms",
-        image:img64,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.thekoreanfashion.com/collections/newest-pants/products/drawstring-straight-track-pants"
-    },
-    {
-        id:65,
-        title:"Mens Elastic Striped Pants",
-        Theme: 213,
-        category: "Men Bottoms",
-        image:img65,
-        text: "Add the bucket bag to your collection and reach for it whenever you want to freshen up your day or style. Bright, functional and roomy enough to store all your daily belongings, this woven bag can be a wearable piece of art or an easy conversation starter.",
-        link: "https://www.thekoreanfashion.com/collections/newest-pants/products/loose-striped-leg-pants"
-    }
+    { 
+        id:58, 
+        title:"Mens Oversized Tee", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img58, 
+        text: "The look of cotton with AIRism performance. Narrower neckline for a clean, neat style.", 
+        link: "https://www.uniqlo.com/sg/en/products/E425974-000?colorCode=COL32&sizeCode=SMA002" 
+    }, 
+    { 
+        id:59, 
+        title:"Mens Turtleneck", 
+        Theme: 213, 
+        category: "Men Tops", 
+        image:img59, 
+        text: "When it comes to a winning marriage of the chic and the cozy, it’s tough to beat the turtleneck. ", 
+        link: "https://www.kooding.com/unisex-logo2-turtleneck-black/p/222380" 
+    }, 
+    { 
+        id:60, 
+        title:"Mens Straight Cut Pants", 
+        Theme: 213, 
+        category: "Men Bottoms", 
+        image:img60, 
+        text: "Highly versatile dress pants with a pleated front cut a perfect fit that elongates your figure, while the half-elasticated back cinches comfortably. The structured style works for both professional and casual settings.", 
+        link: "https://www.yesstyle.com/en/graycious-straight-leg-dress-pants/info.html/pid.1111958602" 
+    }, 
+    { 
+        id:61, 
+        title:"Mens Ripped Jeans", 
+        Theme: 213, 
+        category: "Men Bottoms", 
+        image:img61, 
+        text: "Classic jeans in a comfortably loose fit are a wardrobe staple fit for any occasion. Roll up the cuffs for extra edge.", 
+        link: "https://www.zara.com/sg/en/skinny-split-hem-jeans-p05585430.html?v1=182271613&v2=2119340" 
+    }, 
+    { 
+        id:62, 
+        title:"Mens Cargo Pants", 
+        Theme: 213, 
+        category: "Men Bottoms", 
+        image:img62, 
+        text: "You can't go wrong with a cargo pant. With a drawstring waist, cargo pockets and cuffed ankles, you'll be wearing them on repeat.", 
+        link: "https://cottonon.com/SG/military-cargo-pant/3611092-02.html?dwvar_3611092-02_color=3611092-02&cgid=mens-cargo&originalPid=3611092-02#start=6&sz=60" 
+    }, 
+    { 
+        id:63, 
+        title:"Mens Wide Leg Pants", 
+        Theme: 213, 
+        category: "Men Bottoms", 
+        image:img63, 
+        text: "Take it easy in these flowy wide-leg pants cut from soft material and designed with flowy wide legs.", 
+        link: "https://www.yesstyle.com/en/diphon-plain-straight-leg-wide-leg-pants/info.html/pid.1105373060" 
+    }, 
+    { 
+        id:64, 
+        title:"Mens Drawstring Pants", 
+        Theme: 213, 
+        category: "Men Bottoms", 
+        image:img64, 
+        text: "Endlessly versatile, wear them with an oversized tee and complete the look with fresh white kicks for a cool street style look.", 
+        link: "https://www.thekoreanfashion.com/collections/newest-pants/products/drawstring-straight-track-pants" 
+    }, 
+    { 
+        id:65, 
+        title:"Mens Elastic Striped Pants", 
+        Theme: 213, 
+        category: "Men Bottoms", 
+        image:img65, 
+        text: "These comfortable pants can be versatile addition to your wardrobe, as they can be styled for any occasion.", 
+        link: "https://www.thekoreanfashion.com/collections/newest-pants/products/loose-striped-leg-pants" 
+    } 
 ]
 
 export default Categories

@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
-import PProfile from '../pages/profile'
+import articles from '../pages/articles'
 import '@testing-library/jest-dom'
 
 describe('Home', () => {
-  it('Home page works', () => {
-    render(<PProfile />)
+  it('Recommendations Page works', () => {
+    render(<articles />)
 
   })
 })

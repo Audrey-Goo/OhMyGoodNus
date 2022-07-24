@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
 import PostProfile from './PostProfile'
@@ -17,18 +18,26 @@ function PostsProfile() {
     , [db])
 
   return (
-    <div>
+    <div className="grid grid-cols-4 gap-4">
+      
       {posts.map((post) => (
-        <PostProfile 
-          key={post.id}
-          id={post.id}
-          username={post.data().username}
-          userImg={post.data().profileImg}
-          img={post.data().image}
-          caption={post.data().caption}
-        />    
-        ))}
+        <div>
+            <PostProfile 
+              key={post.id}
+              id={post.id}
+              username={post.data().username}
+              userImg={post.data().profileImg}
+              img={post.data().image}
+              caption={post.data().caption} />
+              
+        </div>
+        )
+        )}
+        
+      
     </div>
+
+    
   )
 }
 

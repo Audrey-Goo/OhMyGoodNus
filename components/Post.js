@@ -113,7 +113,7 @@ function Post({ id,username, userImg, img, caption }) {
 
       {/*Input box*/}
       {session && (
-        <form className='flex items-center p-4'>
+        <form className='flex p-4'>
         <EmojiHappyIcon className="h-7" />
           <input type='text' value={comment} onChange={e => setComment(e.target.value)} placeholder='Add a comment...' className='border-none bg-beige flex-1 focus:ring-0 outline-none'/>
           <button type = 'submit' disabled={!comment.trim()} onClick={sendComment} className='font-semibold text-blue-400'>Post</button>

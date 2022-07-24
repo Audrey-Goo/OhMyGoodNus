@@ -13,7 +13,7 @@ function Chat({ id, users }) {
     const router = useRouter()
     const { data: session } = useSession();
 
-    const recipientEmail = (session.user != null) ? getRecipientEmail(users,session.user) : "coding.solutions.incs@gmail.com";
+    const recipientEmail = (session.user != null) ? getRecipientEmail(users,session.user) : "wyerock24@gmail.com";
     console.log("DEBUG (recipientEmail): " + recipientEmail);
 
     const q = (recipientEmail) ? query(collection(db,"users"), where('email','==', recipientEmail)) : null;

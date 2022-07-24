@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Story from "./Story"
 import { useSession } from "next-auth/react"
 
+
 function Stories() {
   const [suggestions, setSuggestions] = useState([])
   const { data: session } = useSession();

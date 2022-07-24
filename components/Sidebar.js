@@ -20,6 +20,8 @@ function Sidebar() {
   const [user] = useAuthState(auth);
   const { data: session } = useSession();
 
+
+
       const q = query(collection(db,"chats"), where('users','array-contains', session.user.email))
       //const userChatRef = getDocs(q)
       const [chatsSnapshot] = useCollection(q)
@@ -44,6 +46,7 @@ function Sidebar() {
     <Container>
       <Header>
         <UserAvatar src={session.user.image}/>
+
 
         <IconsContainer>
           <IconButton>

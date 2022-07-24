@@ -28,7 +28,7 @@ const Profile = () => {
             setNumPost(count)
          });
 
-         onSnapshot(query(collection(db,'userDetails'), where("username", "==", session?.user?.username)), snapshot => {
+        onSnapshot(query(collection(db,'userDetails'), where("username", "==", session?.user?.username)), snapshot => {
             snapshot.forEach((doc) => {
                 if (doc.get("text") !== undefined) {
                     setText(doc.get("text"));
@@ -38,12 +38,15 @@ const Profile = () => {
                 };
             });
          });
+         
+        
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     , [db])
 
     return (
-        <div className = "max-w-6xl mx-5 p-10 xl:mx-auto">
-            <div className="grid grid-cols-4 gap-4"
+        <div className = "max-w-6xl mx-auto p-10 xl:mx-auto">
+            <div className=""
             >
                 <div className='avatar'>
                     <div className='rounded-full w-36 h-36'>

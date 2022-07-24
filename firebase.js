@@ -7,6 +7,9 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import { getAuth } from 'firebase/auth'; 
 import { GoogleAuthProvider } from "firebase/auth";
+import { setPersistence, signInWithRedirect, browserSessionPersistence  } from "firebase/auth";
+
+
 
 
 const firebaseConfig = {
@@ -25,5 +28,7 @@ const db = getFirestore();
 const storage = getStorage();
 const auth = getAuth(); 
 const provider = new GoogleAuthProvider();
+
+setPersistence(auth, browserSessionPersistence)
 
 export { app, db, storage, auth, provider };

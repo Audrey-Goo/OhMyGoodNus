@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Profile from '../components/Profile'
-import PostsProfile from '../components/PostsProfile'
-import ModalProfile from '../components/ModalProfile'
+import Header from '../../components/Header'
+import Profile from '../../components/Profile'
+import PostsProfile from '../../components/PostsProfile'
+import ModalProfile from '../../components/ModalProfile'
 import { useSession } from "next-auth/react"
 
 export default function PProfile() {
@@ -29,3 +29,4 @@ export default function PProfile() {
         </main>
       )
 }
+
