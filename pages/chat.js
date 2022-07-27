@@ -17,34 +17,34 @@ import { ChakraProvider } from '@chakra-ui/react'
 export default function ChatTwo() {
   const { data: session } = useSession();
 
-  // const userRef = doc(db, "users", 'pls#' + session.user.uid) // Don't know how to auto-generate ID 
-
-  useEffect(() => {
-    onAuthStateChanged(auth, (user ) => {
-      if (user) {
-        const userRef = doc(db, "users", "pls#" + user.uid)
-        setDoc(userRef, {
-          email: user.email,
-          lastSeen: serverTimestamp(),
-          photoURL : user.photoURL, 
-        }, 
-        {merge:true})
-      } else {
-        console.log("Hello Fail")
-      }
-    })
-  })
+  const userRef = doc(db, "users", 'pls#' + session.user.uid) // Don't know how to auto-generate ID 
 
   // useEffect(() => {
-  //   if (session.user) {
-  //     setDoc(userRef, {
-  //        email: session.user.email,
-  //        lastSeen: serverTimestamp(),
-  //        photoURL: session.user.image,
-  //     },
-  //     {merge:true})
-  //   }
-  // }, [session.user, userRef])
+  //   onAuthStateChanged(auth, (user ) => {
+  //     if (user) {
+  //       const userRef = doc(db, "users", "pls#" + user.uid)
+  //       setDoc(userRef, {
+  //         email: user.email,
+  //         lastSeen: serverTimestamp(),
+  //         photoURL : user.photoURL, 
+  //       }, 
+  //       {merge:true})
+  //     } else {
+  //       console.log("Hello Fail")
+  //     }
+  //   })
+  // })
+
+  useEffect(() => {
+    if (session.user) {
+      setDoc(userRef, {
+         email: session.user.email,
+         lastSeen: serverTimestamp(),
+         photoURL: session.user.image,
+      },
+      {merge:true})
+    }
+  }, [session.user, userRef])
 
     return (
         <div className='bg-brown'>

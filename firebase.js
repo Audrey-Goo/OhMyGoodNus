@@ -29,6 +29,4 @@ const storage = getStorage();
 const auth = getAuth(); 
 const provider = new GoogleAuthProvider();
 
-setPersistence(auth, browserSessionPersistence)
-
 export { app, db, storage, auth, provider };

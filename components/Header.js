@@ -79,7 +79,7 @@ function Header() {
         {session ? (
           <>
           <div className="relative navBtn">
-            <ChatAltIcon onClick={() => router.push("/chat")} className="navBtn" />
+            <ChatAltIcon onClick={() => router.push("/")} className="navBtn" />
             <div className="absolute -top-2 -right-1 text-xs w-5 h-5
              bg-red-500 rounded-full flex items-center justify-center animate-bounce text-white">3</div>
           </div>
